@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    position: relative;
+}
+header{
+    background-color: #FFEEE6;  
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    flex-wrap: nowrap;
+}
+
+
+
+body{
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 6.25rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    align-self: center;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 0px 1.875rem;
+    margin: .3125rem;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+} 
+
+.nav-links li a{
+    color: black;
+    font-size: 1.875rem;
+    text-decoration: none;
+}
+
+.logo img{
+    float: left;
+    height: 5rem;
+    width: auto;
+    transition: 0.2s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.btn button{
+    height: 1.875rem;
+    width: 4.375rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.btn button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+footer{
+    background-color: #FFEEE6;  
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 6.25rem;
+    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.listUbis{
+    list-style: none;
+}
+
+.listUbis li{
+    font-size: 20px;
+}
+
+.listRedes{
+    list-style: none;
+    display: flex;
+}
+
+.listRedes li{
+    padding: .9375rem;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.fa-twitter{
+    font-size: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-twitter:hover{
+    transform: scale(1.1);
+    color: #00acee;
+}
+
+.fa-square-instagram{
+    font-size: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-square-instagram:hover{
+    transform: scale(1.1);
+    color: #E1306C;
+}
+
+.fa-square-facebook{
+    font-size: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-square-facebook:hover{
+    transform: scale(1.1);
+    color: #3b5998;
+}
+
+.fa-whatsapp{
+    margin-right: .9375rem;
+    margin-bottom: .9375rem;
+    padding: 1rem;
+    font-size: 3.125rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: #25d366;
+}
+
+.nav-links .cartaNav{
+    color: green;
+    text-decoration: underline;
+}
+
+.formLogin{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 85%);
+    border-radius: 20px;
+}
+
+.labelUser{
+    margin: auto;
+}
+
+.labelUser input{
+    height: 2.5rem;
+    border-radius: 20px;
+}
+
+.labelUser input::placeholder{
+    text-align: center;
+}
+
+.labelPass{
+    margin: auto;
+}
+
+.labelPass input{
+    height: 2.5rem;
+    border-radius: 20px;
+}
+
+.labelPass input::placeholder{
+    text-align: center;
+}
+
+.formLogin button{
+    width: 6.25rem;
+    margin: auto;
+    border-radius: 1.25rem;
+    height: 2.1875rem;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.2s;
+    }
+
+    .formLogin button:hover{
+        background-color: rgb(7, 185, 7);
+        transform: scale(1.1);
+    }
+
+.formLogin a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.formLogin a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+
+.formLogin h2{
+    color: white;
+    text-align: center;
+    font-size: 1.875rem;
+    padding: 0 0 .625rem 0;
+}
+
+.fa-user{
+    color: white;
+}
+
+.fa-lock{
+    color: white;
+}
+
+.navCarta{
+    display: flex;
+    justify-content: center;
+}
+
+.navCarta ul{
+    padding: 1.5625rem;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 80%);
+    margin-top: .9375rem;
+    width: 85%;
+}
+
+.navCarta li{
+    font-size: 1.25rem;
+    transition: 0.2s;
+}
+
+.navCarta li:hover{
+    transform: scale(1.1);
+}
+
+.navCarta li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navCarta li a:hover{
+    color: #FFEEE6;
+}
+
+.cartaBurg{
+    display: flex;
+    justify-content: center;
+}
+
+.cartaBurg table{
+    text-align: center;
+    width: 70%;
+    font-size: 1.25rem;
+}
+
+.cartaBurg table thead tr th{
+    background-color: green;
+    
+}
+
+.cartaBurg table tr td{
+    background-color: rgb(255, 255, 255, 80%);
+    color: black;
+    padding: .9375rem;
+    border-radius: 1.25rem;
+}
+
+.contPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    height: 25rem;
+    background-image: url(../img/sk-uVPV_nV17Tw-unsplash.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+}
+
+.contPrincipal div{
+    display: inline-block;
+    margin-right: 3.125rem;
+    width: 15.625rem;
+    padding: .9375rem;
+    border: 1px solid black;
+    background-color: rgb(255, 238, 229, 95%);
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.contPrincipal .despQuienes .contenidoDesp{
+    padding: 0;
+    margin: 0;
+    width: 12.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}
+.contPrincipal .despSucursales .contenidoDesp{
+    padding: 0;
+    margin: 0;
+    width: 12.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}
+.contPrincipal .despMedios .contenidoDesp{
+    padding: 0;
+    margin: 0;
+    width: 12.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}
+
+summary{
+    font-size: 1.25rem;
+}
+
+.sectionPromosH{
+    background-color: rgb(255, 238, 229, 95%);
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionPromosH h2{
+    font-size: 2.5rem;
+}
+
+.sectionPromosH .imgPromo{
+    width: 50%;
+    height: 60%;
+}
+
+.sectionPromosH .imgPromo img{
+    object-fit: fill;
+    width:100%;
+    height:100%;
+}
+
+.tituloPromos{
+    font-size: 1.25rem;
+    margin-top: .9375rem;
+    width: 25%;
+    margin: 15px auto;
+}
+
+.tituloPromos h2{
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 238, 229);
+    border-radius: 1.25rem;
+}
+
+.promoCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15.625rem;
+    margin: .9375rem 0;
+    background-color: rgb(255, 238, 229, 85%);
+}
+
+.promoCard .imgPromocion{
+    height: 50%;
+    width: 60%;
+    margin: auto;
+}
+
+.promoCard .imgPromocion img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+.promoCard .botonesPromos{
+    margin: 20px;
+}
+
+.promoCard .botonesPromos button{
+    width: 6.875rem;
+    height: 3.75rem;
+    margin: .9375rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: 0.2s;
+}
+
+.promoCard .botonesPromos button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(236, 236, 23);
+}
+
+.galeriaGrid{
+    margin: .9375rem auto;
+    display: grid;
+    width: 100%;
+    gap: .9375rem;
+    justify-content: center;
+    align-self: center;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(5, 15%);
+    grid-template-areas: 
+    "img1 img1 img1 img1"
+    "img2 img2 img3 img3"
+    "img2 img2 img3 img3"
+    "img4 img4 img5 img5"
+    "img6 img6 img6 img6"
+    ;
+}
+
+.imagenGaleria{
+    height:100% ;
+    width: 100%;
+}
+
+.imagenGaleria img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.tituloGaleria{
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    background-color: rgb(255, 238, 229, 95%);
+}
