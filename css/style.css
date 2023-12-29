@@ -76,16 +76,9 @@ body{
     color: white;
 }
 
-footer{
+.footer{
     background-color: #FFEEE6;  
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    height: 6.25rem;
-    margin-top: auto;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
+
 }
 
 .listUbis{
@@ -96,12 +89,12 @@ footer{
     font-size: 20px;
 }
 
-.listRedes{
+.lista-redes{
     list-style: none;
     display: flex;
 }
 
-.listRedes li{
+.lista-redes li{
     padding: .9375rem;
     display: inline-block;
     justify-content: space-between;
