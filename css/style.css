@@ -1,21 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 html{
     position: relative;
 }
-header{
+/* header{
     background-color: #FFEEE6;  
     display: flex; 
     align-items: center;
     justify-content: space-around;
     height: 5rem;
     flex-wrap: nowrap;
+} */
+
+.colorbarra{
+    background-color: #FFEEE6;
 }
-
-
 
 body{
     height: 100%;
