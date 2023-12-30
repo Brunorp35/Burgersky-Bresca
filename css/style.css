@@ -15,44 +15,30 @@ html{
 }
 
 .background{
-
     background-color: lightblue;
-
 }
 
-/* .nav-links{
-    list-style: none;
-    display: flex;
+.navbar-brand{
+    height: 3.75rem;
+    width: 3.75rem;
 }
-
-.nav-links li{
-    align-self: center;
-    display: inline-block;
-    justify-content: space-between;
-    padding: 0px 1.875rem;
-    margin: .3125rem;
-    border-radius: 15px;
-    transition: 0.2s;
-}
-
-.nav-links li:hover{
-    transform: scale(1.1);
-} 
-
-.nav-links li a{
-    color: black;
-    font-size: 1.875rem;
-    text-decoration: none;
-} */
-
-.logo img{
-    float: left;
+.navbar-brand img{
     height: 5rem;
-    width: auto;
+    width: 5rem;
+    padding: 0;
     transition: 0.2s;
 }
 
-.logo img:hover{
+.navbar-brand img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.li-nav{
+    font-size: 1.25rem;
+    transition: 0.2s;
+}
+
+.li-nav:hover{
     transform: scale(1.1);
 }
 
@@ -70,6 +56,12 @@ html{
     transform: scale(1.1);
     background-color: black;
     color: white;
+}
+
+.desplegables{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer{
@@ -242,29 +234,7 @@ html{
     color: white;
 }
 
-.navbar-brand{
-    height: 3.75rem;
-    width: 3.75rem;
-}
-.navbar-brand img{
-    height: 5rem;
-    width: 5rem;
-    padding: 0;
-    transition: 0.2s;
-}
 
-.navbar-brand img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.li-nav{
-    font-size: 1.25rem;
-    transition: 0.2s;
-}
-
-.li-nav:hover{
-    transform: scale(1.1);
-}
 
 .cartaBurg{
     display: flex;
