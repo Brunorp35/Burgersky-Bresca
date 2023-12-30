@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Burgers</title>
 </head>
-<body>
-    <header>
+<body class="d-flex flex-column min-vh-100 background">
+  <header>
         <nav class="navbar navbar-expand-lg colorbarra">
             <div class="container-fluid">               
-                 <div class="contenedor-logo"> <a class="navbar-brand" href="#"><img src="./img/LogoHam.png" alt=""></a> </div>
+                <div class="contenedor-logo"> <a class="navbar-brand" href="#"><img src="./img/LogoHam.png" alt=""></a> </div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                   </button>               
@@ -28,7 +28,7 @@
                     <a class="nav-link active" href="pages/galeria.html">Galeria</a>
                   </li>
                   <li class="nav-item li-nav mx-3">
-                    <a href="./login.html" class="btn"><button><b>Login</b></button></a>
+                    <a href="./pages/login.html" class="btn"><button><b>Login</b></button></a>
                   </li>
                   
                 </ul>
@@ -37,13 +37,13 @@
         </nav>
   </header>
     <main>
-      <div class="container">
-        <div class="row">
+      <section class="container flex-grow-1">
+        <section class="row mt-3">
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div><img src="./img/sk-uVPV_nV17Tw-unsplash.jpg" class="img-fluid" alt=""></div>
           </div>
-          <div class="d-flex desplegables col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <div class="despQuienes">
+          <div class="d-flex desplegables-cont col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="desplegable">
                 <details>
                     <summary>¿Quienes somos?</summary>
                     <div class="contenidoDesp">
@@ -51,7 +51,7 @@
                     </div>
                 </details>
             </div>
-            <div class="despSucursales">
+            <div class="desplegable mt-3">
                 <details>
                     <summary>Sucursales</summary>
                     <div class="contenidoDesp">
@@ -59,7 +59,7 @@
                     </div>
                 </details>
             </div>
-            <div class="despMedios">
+            <div class="desplegable mt-3">
                 <details>
                     <summary>Medios de pago</summary>
                     <div class="contenidoDesp">
@@ -68,26 +68,49 @@
                 </details>
             </div>      
           </div>
-        </div>
-        <section class="tituloPromos">
-            <h2><b>Disfruta al mejor precio</b></h2>
         </section>
-        <section class="sectionPromosH">
-            <div>
+        <section class="row my-3 align-items-center">
+          <section class="col-12 radio-containers text-center fondo-beige mb-3">
+            <h2><b>Disfruta al mejor precio</b></h2>
+          </section>
+          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="fondo-beige radio-containers">
                 <h2>Nuestras</h2>
                 <h2>Promos</h2>
             </div>
-            <div class="imgPromo">
-                <img src="./img/6871698853168.jpg" alt="">
+          </section>
+          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/6871698853168.jpg" class="d-block w-100 img-promo" alt="...">
+                </div>
+                <div class="carousel-item ">
+                  <img src="./img/promociones-en-tu-restaurante-combos2.jpg" class="d-block w-100 img-promo" alt="...">
+                </div>
+                <div class="carousel-item ">
+                  <img src="./img/comida-rapida.jpg" class="d-block w-100 img-promo" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+          </section>
         </section>
-      </div>     
+        
+      </section>     
         
     </main>
-    <footer>
+    <footer class="mt-auto">
         <div class="container-fluid">
           <div class="row footer">
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
             
               <ul class="d-flex lista-redes mt-4">
                 <li><i class="fa-brands fa-square-facebook"></i></li>
@@ -96,14 +119,14 @@
               </ul>
             
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                <ul class="d-flex listUbis mt-3">
                 <li><i class="fa-solid fa-location-dot"></i>      Av. Francia 445</li>
                 <li><i class="fa-solid fa-location-dot"></i>      Avellaneda 778</li>
                 <li><i class="fa-solid fa-location-dot"></i>      Rivadavia 2376</li>
               </ul>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
               <div class="d-flex whatsapp">
                 <h3>Comunicate por whatsapp!</h3>
                 <i class="fa-brands fa-whatsapp"></i>
@@ -112,5 +135,7 @@
           </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
