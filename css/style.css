@@ -91,6 +91,23 @@
     .lista-redes{
         margin-top: .9375rem;
     }
+
+    .card-position{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-position .card{
+        align-items: center;
+    }
+}
+
+@media (max-width:375px){
+    .desplegable{
+        width: 17.5rem;
+    }
 }
 
 footer{
@@ -277,19 +294,6 @@ input[type=submit]:hover{
     text-decoration: none;
     color: black;
 }
-.contPrincipal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: end;
-    width: 100%;
-    height: 25rem;
-    background-image: url(../img/sk-uVPV_nV17Tw-unsplash.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    
-}
 
 summary{
     font-size: 1.25rem;
@@ -343,56 +347,31 @@ summary{
     color: rgb(236, 236, 23);
 }
 
-.galeriaGrid{
-    margin: .9375rem auto;
-    display: grid;
-    width: 100%;
-    gap: .9375rem;
-    justify-content: center;
-    align-self: center;
-    grid-template-columns: repeat(4, 15%);
-    grid-template-rows: repeat(5, 15%);
-    grid-template-areas: 
-    "img1 img1 img1 img1"
-    "img2 img2 img3 img3"
-    "img2 img2 img3 img3"
-    "img4 img4 img5 img5"
-    "img6 img6 img6 img6"
-    ;
+.parrafos-galeria{
+    text-align: center;
+    background-color: rgb(255, 238, 229, 95%);
 }
 
-.imagenGaleria{
-    height:100% ;
-    width: 100%;
+.imagen-hover{
+    transition: 0.2s;
 }
 
-.imagenGaleria img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.img1{
-    grid-area: img1;
-}
-.img2{
-    grid-area: img2;
-}
-.img3{
-    grid-area: img3;
-}
-.img4{
-    grid-area: img4;
-}
-.img5{
-    grid-area: img5;
-}
-.img6{
-    grid-area: img6;
+.imagen-hover:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .tituloGaleria{
     font-size: 1.875rem;
     text-align: center;
     margin-top: 1.25rem;
+    border-radius: 1.25rem;
     background-color: rgb(255, 238, 229, 95%);
 }
+.card{
+    transition: 0.2s;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
