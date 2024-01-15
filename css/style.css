@@ -1,21 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.fondo-beige{
-    background-color: #FFEEE6;
-}
-
-.radio-containers{
-    border-radius: 1.25rem;
-}
-
-.colorbarra{
-    background-color: #FFEEE6;
-    align-items: center;
-}
-
+/* 
 .contenedor-logo{
     width: 4.375rem;
     height: 4.375rem;
@@ -79,7 +62,7 @@
     background-color: rgb(255, 238, 229, 95%);
     border-radius: 1.25rem;
     cursor: pointer;
-}
+} */
 
 @media (max-width:768px){
     .desplegable{
@@ -293,16 +276,6 @@ input[type=submit]:hover{
 .nav-carta ul li a{
     text-decoration: none;
     color: black;
-}
-
-summary{
-    font-size: 1.25rem;
-}
-
-.img-promo{
-    height: 12.5rem;
-    width: 25rem;
-    object-fit: fill;
 }
 
 .promoCard{

@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <script src="https://kit.fontawesome.com/e364be3451.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Burgers</title>
 </head>
 <body class="d-flex flex-column min-vh-100 background">
   <header>
-        <nav class="navbar navbar-expand-lg colorbarra">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">               
-                <div class="contenedor-logo"> <a class="navbar-brand" href="#"><img src="./img/LogoHam.png" alt=""></a> </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="contenedor-logo"> <a class="navbar-brand" href="#"><img src="./img/LogoHam.png" alt=""></a> </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
-                  </button>               
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              </button>               
+              <div class="collapse navbar-collapse justify-content-end contenedor-listanav" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item li-nav mx-3">
                     <a class="nav-link active" aria-current="page" href="pages/carta.html">Carta</a>
@@ -38,15 +38,15 @@
   </header>
     <main>
       <section class="container flex-grow-1">
-        <section class="row mt-3">
+        <section class="row section-primaria mt-3">
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div><img src="./img/sk-uVPV_nV17Tw-unsplash.jpg" class="img-fluid" alt=""></div>
           </div>
-          <div class="d-flex desplegables-cont col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="d-flex contenedor-desplegables col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div class="desplegable">
                 <details>
                     <summary>¿Quienes somos?</summary>
-                    <div class="contenidoDesp">
+                    <div class="contenido-desplegado">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                 </details>
@@ -54,7 +54,7 @@
             <div class="desplegable mt-3">
                 <details>
                     <summary>Sucursales</summary>
-                    <div class="contenidoDesp">
+                    <div class="contenido-desplegado">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                 </details>
@@ -62,24 +62,22 @@
             <div class="desplegable mt-3">
                 <details>
                     <summary>Medios de pago</summary>
-                    <div class="contenidoDesp">
+                    <div class="contenido-desplegado">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                 </details>
             </div>      
           </div>
         </section>
-        <section class="row my-3 align-items-center">
-          <section class="col-12 radio-containers text-center fondo-beige mb-3">
+        <section class="row my-3 section-secundaria">
+          <section class="col-12 titulo-disfruta mb-3">
             <h2><b>Disfruta al mejor precio</b></h2>
           </section>
-          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-            <div class="fondo-beige radio-containers">
+          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 titulo-promosindex">            
                 <h2>Nuestras</h2>
-                <h2>Promos</h2>
-            </div>
+                <h2>Promos</h2>          
           </section>
-          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <section class="col-xl-6 col-lg-6 col-md-12 col-sm-12 carrusel">
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -103,8 +101,8 @@
             </div>
           </section>
         </section>
-        <section class="row my-3 align-items-center">
-          <section class="col-12 radio-containers text-center fondo-beige mb-3">
+        <section class="row my-3 section-terciaria">
+          <section class="col-12 titulo-testimonios mb-3">
             <h2><b>Testimonios importantes!</b></h2>
           </section>
           <section class="col-xl-4 col-lg-4 col-md-6 col-sm-12 card-position my-2">
@@ -174,7 +172,7 @@
         
     </main>
     <footer class="mt-auto">
-        <div class="container-fluid">
+        <section class="container-fluid">
           <div class="row footer">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
             
@@ -186,7 +184,7 @@
             
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-               <ul class="d-flex listUbis mt-3">
+              <ul class="d-flex lista-ubicaciones mt-3">
                 <li><i class="fa-solid fa-location-dot"></i>      Av. Francia 445</li>
                 <li><i class="fa-solid fa-location-dot"></i>      Avellaneda 778</li>
                 <li><i class="fa-solid fa-location-dot"></i>      Rivadavia 2376</li>
@@ -199,7 +197,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

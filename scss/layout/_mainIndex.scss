@@ -1,0 +1,94 @@
+main{
+    background-color: $colorSecundario;
+    section{
+        .section-primaria{
+            .contenedor-desplegables{
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .desplegable{
+                    margin-right: 3.125rem;
+                    width: 15.625rem;
+                    padding: .9375rem;
+                    border: 1px solid black;
+                    background-color: rgb(255, 238, 229, 95%);
+                    border-radius: 1.25rem;
+                    cursor: pointer;
+                    details{
+                        summary{
+                            font-size: 1.25rem;
+                        }                       
+                    }
+                }
+            }
+        }
+        .section-secundaria{
+            align-items: center;
+                .titulo-disfruta{
+                    border-radius: 1.25rem;
+                    text-align: center;
+                    background-color: $colorPrincipal;
+                }
+                .titulo-promosindex{                   
+                    border-radius: 1.25rem;
+                    text-align: center;
+                    background-color: $colorPrincipal;                
+                }
+                .carrusel{
+                    .img-promo{
+                        height: 12.5rem;
+                        width: 25rem;
+                        object-fit: fill;
+                    }
+                }
+        }
+        .section-terciaria{
+            align-items: center;
+            .titulo-testimonios{
+                background-color: $colorPrincipal;
+                text-align: center;
+                border-radius: 1.25rem;
+            }
+            section{
+                .card{
+                    transition: 0.2s;
+                    &:hover{
+                        transform: scale(1.05);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:375px){
+        .desplegable{
+            width: 17.5rem;
+        }
+    }
+    @media (max-width:768px){
+        .desplegable{
+            margin-left: 2.5rem;
+            margin-top: .9375rem;
+            width: 20rem;
+        }
+    
+        .lista-redes{
+            margin-top: .9375rem;
+        }
+    
+        .card-position{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .card{
+                align-items: center;
+            }
+        }
+    }
+    @media (max-width:992px){
+        .titulo-promosindex{
+            margin-bottom: .625rem;
+        }
+    }
+}
