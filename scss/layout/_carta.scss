@@ -1,0 +1,55 @@
+main{
+
+.nav-carta{
+    @include flex(row, center, none, none);
+    ul{
+        @include flex(row, space-around, center, none);
+        border-radius: 1.25rem;
+        background-color: $colorPrincipal;
+        padding: .3125rem;
+        width: 90%;
+        list-style: none;
+        li{
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: 0.2s;
+            background-color: rgb(175, 174, 174);
+            border-radius: 1.25rem;
+            padding: 5px 10px;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.carta-tabla{
+    @include flex(row, center, none, none);
+    table{
+        text-align: center;
+        width: 70%;
+        font-size: 1.25rem;
+        thead{
+            tr{
+                th{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+        tr{
+            td{
+                background-color: rgb(255, 255, 255, 80%);
+                color: black;
+                padding: .9375rem;
+                border-radius: 1.25rem;
+            }
+        }
+    }
+}
+}

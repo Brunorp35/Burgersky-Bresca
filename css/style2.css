@@ -189,4 +189,62 @@ footer section .whatsapp .fa-whatsapp:hover {
   color: #25d366;
 }
 
+main .nav-carta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+}
+main .nav-carta ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  border-radius: 1.25rem;
+  background-color: #FFEEE6;
+  padding: 0.3125rem;
+  width: 90%;
+  list-style: none;
+}
+main .nav-carta ul li {
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: 0.2s;
+  background-color: rgb(175, 174, 174);
+  border-radius: 1.25rem;
+  padding: 5px 10px;
+}
+main .nav-carta ul li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .nav-carta ul li a {
+  text-decoration: none;
+  color: black;
+}
+main .carta-tabla {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+}
+main .carta-tabla table {
+  text-align: center;
+  width: 70%;
+  font-size: 1.25rem;
+}
+main .carta-tabla table thead tr th {
+  background-color: black;
+  color: white;
+}
+main .carta-tabla table tr td {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 0.9375rem;
+  border-radius: 1.25rem;
+}
+
 /*# sourceMappingURL=style2.css.map */

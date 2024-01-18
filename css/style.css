@@ -64,7 +64,7 @@
     cursor: pointer;
 } */
 
-@media (max-width:768px){
+/* @media (max-width:768px){
     .desplegable{
         margin-left: 2.5rem;
         margin-top: .9375rem;
@@ -91,9 +91,9 @@
     .desplegable{
         width: 17.5rem;
     }
-}
+} */
 
-footer{
+/* footer{
     background-color: #FFEEE6; 
 }
 
@@ -171,7 +171,7 @@ footer{
 .fa-whatsapp:hover{
     transform: scale(1.1);
     color: #25d366;
-}
+} */
 
 .nav-links .cartaNav{
     color: green;
