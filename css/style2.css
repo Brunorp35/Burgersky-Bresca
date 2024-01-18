@@ -125,6 +125,9 @@ main section .section-terciaria section .card:hover {
   }
 }
 
+footer {
+  background-color: #FFEEE6;
+}
 footer section .lista-redes {
   list-style: none;
   align-items: center;
@@ -230,6 +233,7 @@ main .carta-tabla {
   justify-content: center;
   align-items: none;
   gap: none;
+  margin-bottom: 1.25rem;
 }
 main .carta-tabla table {
   text-align: center;
@@ -245,6 +249,45 @@ main .carta-tabla table tr td {
   color: black;
   padding: 0.9375rem;
   border-radius: 1.25rem;
+}
+
+main .promo-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  height: 15.625rem;
+  margin: 0.9375rem 0;
+  background-color: rgba(255, 238, 229, 0.85);
+}
+main .promo-card .img-promocion {
+  height: 50%;
+  width: 60%;
+  margin: auto;
+}
+main .promo-card .img-promocion img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+main .promo-card .botones-promo {
+  margin: 1.25rem;
+}
+main .promo-card .botones-promo button {
+  width: 6.875rem;
+  height: 3.75rem;
+  margin: 0.9375rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+main .promo-card .botones-promo button:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: rgb(236, 236, 23);
 }
 
 /*# sourceMappingURL=style2.css.map */

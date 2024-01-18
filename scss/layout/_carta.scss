@@ -30,6 +30,7 @@ main{
 
 .carta-tabla{
     @include flex(row, center, none, none);
+    margin-bottom: 1.25rem;
     table{
         text-align: center;
         width: 70%;
