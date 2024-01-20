@@ -1,0 +1,23 @@
+main{
+    section{
+        .titulo-galeria{
+            font-size: 1.875rem;
+            text-align: center;
+            margin-top: 1.25rem;
+            border-radius: 1.25rem;
+            background-color: rgb(255, 238, 229, 95%);
+        }
+    
+        .imagen-hover{
+            transition: 0.2s;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+            .parrafos-galeria{
+                text-align: center;
+                background-color: rgb(255, 238, 229, 95%);
+            }
+        }
+    }
+}

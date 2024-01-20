@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: colorPrincipal;
+}
+
 header nav {
   align-items: center;
   background-color: #FFEEE6;
@@ -43,7 +50,7 @@ header nav div .contenedor-listanav ul li .btn button:hover {
 }
 
 main {
-  background-color: lightblue;
+  background-color: rgb(173, 215, 230);
 }
 main section .section-primaria .contenedor-desplegables {
   flex-direction: column;
@@ -114,6 +121,7 @@ main section .section-terciaria section .card:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: none;
   }
   main .card-position .card {
     align-items: center;
@@ -129,55 +137,52 @@ footer {
   background-color: #FFEEE6;
 }
 footer section .lista-redes {
-  list-style: none;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: none;
+  list-style: none;
 }
 footer section .lista-redes li {
   padding: 0.9375rem;
   display: inline-block;
   justify-content: space-between;
 }
-footer section .lista-redes li .fa-square-facebook {
+footer section .lista-redes li .fa-square-facebook, footer section .lista-redes li .fa-twitter, footer section .lista-redes li .fa-square-instagram {
   font-size: 2rem;
   transition: 0.2s;
   cursor: pointer;
 }
-footer section .lista-redes li .fa-square-facebook:hover {
+footer section .lista-redes li .fa-square-facebook:hover, footer section .lista-redes li .fa-twitter:hover, footer section .lista-redes li .fa-square-instagram:hover {
   transform: scale(1.1);
   color: #3b5998;
-}
-footer section .lista-redes li .fa-square-instagram {
-  font-size: 2rem;
-  transition: 0.2s;
-  cursor: pointer;
 }
 footer section .lista-redes li .fa-square-instagram:hover {
   transform: scale(1.1);
   color: #E1306C;
-}
-footer section .lista-redes li .fa-twitter {
-  font-size: 2rem;
-  transition: 0.2s;
-  cursor: pointer;
 }
 footer section .lista-redes li .fa-twitter:hover {
   transform: scale(1.1);
   color: #00acee;
 }
 footer section .lista-ubicaciones {
-  list-style: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: none;
+  list-style: none;
 }
 footer section .lista-ubicaciones li {
   font-size: 1.25rem;
 }
 footer section .whatsapp {
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: none;
 }
 footer section .whatsapp .fa-whatsapp {
   margin-right: 0.9375rem;
@@ -215,7 +220,8 @@ main .nav-carta ul li {
   text-decoration: none;
   font-size: 1.25rem;
   transition: 0.2s;
-  background-color: rgb(175, 174, 174);
+  background-color: white;
+  border: 1px dotted black;
   border-radius: 1.25rem;
   padding: 5px 10px;
 }
@@ -288,6 +294,68 @@ main .promo-card .botones-promo button:hover {
   transform: scale(1.1);
   background-color: black;
   color: rgb(236, 236, 23);
+}
+
+main section .titulo-galeria {
+  font-size: 1.875rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  border-radius: 1.25rem;
+  background-color: rgba(255, 238, 229, 0.95);
+}
+main section .imagen-hover {
+  transition: 0.2s;
+}
+main section .imagen-hover:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+main section .imagen-hover .parrafos-galeria {
+  text-align: center;
+  background-color: rgba(255, 238, 229, 0.95);
+}
+
+main .login {
+  text-align: center;
+  background-color: #FFEEE6;
+  width: 18.75rem;
+  transform: translate(130%, 10%);
+  top: 50%;
+  left: 50%;
+  border-radius: 1.25rem;
+  padding: 0.625rem 0;
+  height: 18.75rem;
+}
+main .login form div {
+  margin-bottom: 1.25rem;
+}
+main .login form .username {
+  transform: translateX(0.15rem);
+}
+main .login form .olvido a {
+  text-decoration: none;
+}
+main .login form .olvido a:hover {
+  text-decoration: underline;
+}
+main .login form .boton-ingresar {
+  width: 6.25rem;
+  margin-bottom: 15px;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+}
+main .login form .boton-ingresar:hover {
+  transform: scale(1.1);
+}
+main .login form .registro {
+  margin: 0 0 1.875rem 0;
+  font-size: 1rem;
+}
+main .login form .registro a {
+  text-decoration: none;
+}
+main .login form .registro a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style2.css.map */

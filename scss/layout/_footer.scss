@@ -2,9 +2,8 @@ footer{
     background-color: $colorPrincipal;
     section{
         .lista-redes{
-            list-style: none;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center, center, none);
+            list-style: none;           
             li{
                 padding: .9375rem;
                 display: inline-block;
@@ -19,18 +18,14 @@ footer{
                     }
                 }
                 .fa-square-instagram{
-                    font-size: 2rem;
-                    transition: 0.2s;
-                    cursor: pointer;
+                    @extend .fa-square-facebook;
                     &:hover{
                         transform: scale(1.1);
                         color: #E1306C;
                     }
                 }
                 .fa-twitter{
-                    font-size: 2rem;
-                    transition: 0.2s;
-                    cursor: pointer;
+                    @extend .fa-square-facebook;
                     &:hover{
                         transform: scale(1.1);
                         color: #00acee;
@@ -39,18 +34,14 @@ footer{
             }
         }
         .lista-ubicaciones{
-            list-style: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(column, center, center, none);
+            list-style: none;         
             li{
                 font-size: 1.25rem;
             }
         }
         .whatsapp{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex(column, center, center, none);
             .fa-whatsapp{
                 margin-right: .9375rem;
                 margin-bottom: .9375rem;

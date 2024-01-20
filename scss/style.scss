@@ -1,12 +1,18 @@
 //utilities
+
 @import "./utilities/functions";
 @import "./utilities/mixins";
 @import "./utilities/variables";
-//layouts
+
+//layouts y base
+
+@import "./base/bodyflex";
 @import "./layout/header";
 @import "./layout/mainIndex";
 @import "./layout/footer";
 @import "./layout/carta";
 @import "./layout/promos";
-@import "./base/generales";
+@import "./layout/galeria";
+@import "./layout/login";
+
 
