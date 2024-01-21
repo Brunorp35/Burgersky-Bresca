@@ -1,4 +1,9 @@
 main{
+    .h1-promos{
+        background-color: $colorPrincipal;
+        border-radius: $radio-principal;
+        margin-top: .9375rem;
+    }
     .promo-card{
         @include flex(row, center, center, none);
         margin: auto;

@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: colorPrincipal;
+  background-color: colorSecundario;
 }
 
 header nav {
@@ -51,6 +51,17 @@ header nav div .contenedor-listanav ul li .btn button:hover {
 
 main {
   background-color: rgb(173, 215, 230);
+}
+main section .titulo-index div {
+  background-color: white;
+  border-radius: 1.25rem;
+  margin-top: 15px;
+}
+main section .titulo-index div h1 {
+  color: black;
+  background-color: #FFEEE6;
+  border-radius: 1.25rem;
+  padding: 0.3125rem;
 }
 main section .section-primaria .contenedor-desplegables {
   flex-direction: column;
@@ -257,6 +268,11 @@ main .carta-tabla table tr td {
   border-radius: 1.25rem;
 }
 
+main .h1-promos {
+  background-color: #FFEEE6;
+  border-radius: 1.25rem;
+  margin-top: 0.9375rem;
+}
 main .promo-card {
   display: flex;
   flex-direction: row;

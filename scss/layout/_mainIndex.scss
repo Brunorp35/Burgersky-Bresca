@@ -1,6 +1,19 @@
 main{
     background-color: $colorSecundario;
     section{
+        .titulo-index{
+            div{
+                background-color: white;
+                border-radius: $radio-principal;
+                margin-top: 15px;
+                h1{
+                    color: black;
+                    background-color: $colorPrincipal;
+                    border-radius: $radio-principal;
+                    padding: .3125rem;
+                }
+            }
+        }
         .section-primaria{
             .contenedor-desplegables{
                 flex-direction: column;
