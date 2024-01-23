@@ -338,6 +338,8 @@ main section .imagen-hover:hover {
 main section .imagen-hover .parrafos-galeria {
   text-align: center;
   background-color: rgba(255, 238, 229, 0.95);
+  border-bottom-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
 }
 
 main .login {

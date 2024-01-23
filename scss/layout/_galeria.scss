@@ -9,14 +9,16 @@ main{
         }
     
         .imagen-hover{
-            transition: 0.2s;
+            transition: 0.2s;     
             &:hover{
-                cursor: pointer;
+                cursor: pointer;              
                 transform: scale(1.05);
             }
             .parrafos-galeria{
-                text-align: center;
-                background-color: rgb(255, 238, 229, 95%);
+                text-align: center;               
+                background-color: rgb(255, 238, 229, 95%);              
+                border-bottom-right-radius: $radio-principal;
+                border-bottom-left-radius: $radio-principal;               
             }
         }
     }
