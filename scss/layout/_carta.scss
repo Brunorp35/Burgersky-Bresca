@@ -10,6 +10,7 @@ main{
         list-style: none;
         li{
             text-decoration: none;
+            text-align: center;
             font-size: 1.25rem;
             transition: 0.2s;
             background-color: white;
@@ -23,6 +24,7 @@ main{
             a{
                 text-decoration: none;
                 color: black;
+                
             }
         }
     }
@@ -46,10 +48,21 @@ main{
         tr{
             
             td{
-                background-color: rgb(255, 255, 255, 80%);
+                background-color: rgb(255, 255, 255, 80%);                
                 color: black;
                 padding: .9375rem;
-                border-radius: 1.25rem;
+                border: 1px solid black;
+                // border-radius: 1.25rem;
+
+            }
+        }
+    }
+}
+@media (max-width:991px){
+    .nav-carta{
+        ul{
+            li{
+                margin-top: .625rem;
             }
         }
     }

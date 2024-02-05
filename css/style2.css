@@ -229,6 +229,7 @@ main .nav-carta ul {
 }
 main .nav-carta ul li {
   text-decoration: none;
+  text-align: center;
   font-size: 1.25rem;
   transition: 0.2s;
   background-color: white;
@@ -265,7 +266,12 @@ main .carta-tabla table tr td {
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 0.9375rem;
-  border-radius: 1.25rem;
+  border: 1px solid black;
+}
+@media (max-width: 991px) {
+  main .nav-carta ul li {
+    margin-top: 0.625rem;
+  }
 }
 
 main .h1-promos {
