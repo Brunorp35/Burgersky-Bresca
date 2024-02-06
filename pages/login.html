@@ -46,22 +46,32 @@
 </header>
   <main class="flex-grow-1">
     <section class="container ">
-      <section class="login">
-        <h1>Login</h1>
-        <form action="" method="post">
-          <div class="username">
-            <input type="text" required>
-            <label>Username</label>
+      <form class="form">
+        <h2 class="form-titulo">Iniciar Sesión</h2>
+        <p class="form-parrafo">¿No tienes una cuenta? <a href="#"> Registrate </a></p>
+
+        <div class="form-container">
+
+          <div class="form-group">
+            <input type="text" id="name" class="form-input" placeholder="  ">
+            <label for="name" class="form-label">Nombre:</label>
+            <span class="form-line"></span>
           </div>
-          <div class="password">
-            <input type="password" required>
-            <label>Password</label>
+          <div class="form-group">
+            <input type="text" id="user" class="form-input" placeholder="  ">
+            <label for="user" class="form-label">Usuario:</label>
+            <span class="form-line"></span>
           </div>
-          <div class="olvido"><a href="">Recuperar clave</a></div>
-          <input type="submit" class="boton-ingresar" value="Log in">
-          <div class="registro">Quiero<a href="#"> registrarme</a></div>
-        </form>
-      </section>
+          <div class="form-group">
+            <input type="password" id="password" class="form-input" placeholder="  ">
+            <label for="password" class="form-label">Contraseña:</label>
+            <span class="form-line"></span>
+          </div>
+          
+          <input type="submit" class="form-submit" value="Ingresar">
+
+        </div>
+      </form>
     </section>
 </main>
 <footer class="mt-auto">

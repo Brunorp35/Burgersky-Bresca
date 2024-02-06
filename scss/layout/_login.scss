@@ -1,50 +1,67 @@
 main{
-        .login{
-            text-align: center;
-            background-color: $colorPrincipal;
-            width: 18.75rem;  
-            transform: translate(130%, 10%);  
-            top: 50%;
-            left: 50%; 
-            border-radius: 1.25rem;
-            padding: .625rem 0;
-            height: 18.75rem;
-            
-            form{
-                div{
-                    margin-bottom: 1.25rem;
+    section{
+    .form{
+        background-color: $colorPrincipal;
+        margin: 10px auto;
+        width: 90%;
+        max-width: 25rem;
+        padding: 4.5em 3em;
+        border-radius: $radio-principal;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+        text-align: center;
+        .form-titulo{
+                font-size: 2rem;
+                margin-bottom: .5em;
+            }
+        .form-container{
+            margin-top: 3em;
+            display: grid;
+            gap: 2.5em;
+            .form-group{
+                position: relative;
+                color: rgb(61, 61, 61);
+                .form-line{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $colorSecundario;
                 }
-                .username{
-                    transform: translateX(.1500rem);
-                }
-                .olvido{
-                    a{
-                        text-decoration: none;
-                        &:hover{
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                .boton-ingresar{
-                    width: 6.25rem;
-                    margin-bottom: 15px;
-                    border-radius: 1.25rem;
-                    transition: 0.2s;
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-                }
-                .registro{
-                    margin: 0 0 1.875rem 0;
+                .form-input{
+                    width: 100%;
+                    background: none;
                     font-size: 1rem;
-                    a{
-                        text-decoration: none;
-                        &:hover{
-                            text-decoration: underline;
-                        }
+                    padding: .6em .3em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid rgb(61, 61, 61);
+                    &:focus + .form-label,
+                    &:not(:placeholder-shown) + .form-label {
+                        transform: translateY(-0.75rem) scale(.9);
+                        transform-origin: left top;
+                        color: $colorSecundario;
                     }
+                }
+                .form-label{
+                    color: rgb(61, 61, 61);
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: .3125rem;
+                    transform: translateY(.625rem);
+                    transition: transform .5s, color .3s;
                 }
             }
+            .form-submit{
+                background-color: $colorSecundario;
+                font-size: 1rem;
+                padding: .8em 0;
+                border: none;
+                border-radius: $radio-principal;
+
+            }
         }
-    
+        }
+    }   
 }

@@ -348,47 +348,66 @@ main section .imagen-hover .parrafos-galeria {
   border-bottom-left-radius: 1.25rem;
 }
 
-main .login {
-  text-align: center;
+main section .form {
   background-color: #FFEEE6;
-  width: 18.75rem;
-  transform: translate(130%, 10%);
-  top: 50%;
-  left: 50%;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 25rem;
+  padding: 4.5em 3em;
   border-radius: 1.25rem;
-  padding: 0.625rem 0;
-  height: 18.75rem;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
-main .login form div {
-  margin-bottom: 1.25rem;
+main section .form .form-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
 }
-main .login form .username {
-  transform: translateX(0.15rem);
+main section .form .form-container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
 }
-main .login form .olvido a {
-  text-decoration: none;
+main section .form .form-container .form-group {
+  position: relative;
+  color: rgb(61, 61, 61);
 }
-main .login form .olvido a:hover {
-  text-decoration: underline;
+main section .form .form-container .form-group .form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(173, 215, 230);
 }
-main .login form .boton-ingresar {
-  width: 6.25rem;
-  margin-bottom: 15px;
-  border-radius: 1.25rem;
-  transition: 0.2s;
-}
-main .login form .boton-ingresar:hover {
-  transform: scale(1.1);
-}
-main .login form .registro {
-  margin: 0 0 1.875rem 0;
+main section .form .form-container .form-group .form-input {
+  width: 100%;
+  background: none;
   font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(61, 61, 61);
 }
-main .login form .registro a {
-  text-decoration: none;
+main section .form .form-container .form-group .form-input:focus + .form-label, main section .form .form-container .form-group .form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-0.75rem) scale(0.9);
+  transform-origin: left top;
+  color: rgb(173, 215, 230);
 }
-main .login form .registro a:hover {
-  text-decoration: underline;
+main section .form .form-container .form-group .form-label {
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0.3125rem;
+  transform: translateY(0.625rem);
+  transition: transform 0.5s, color 0.3s;
+}
+main section .form .form-container .form-submit {
+  background-color: rgb(173, 215, 230);
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1.25rem;
 }
 
 /*# sourceMappingURL=style2.css.map */
