@@ -341,6 +341,9 @@ main section .imagen-hover:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
+main section .imagen-hover img {
+  min-width: 100%;
+}
 main section .imagen-hover .parrafos-galeria {
   text-align: center;
   background-color: rgba(255, 238, 229, 0.95);
